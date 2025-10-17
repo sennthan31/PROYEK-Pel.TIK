@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prototype Halaman Awal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar" aria-label="Navigasi">
+      <div class="logo" title="Logo">P</div>
+      <div class="nav-icon" title="Menu 1">🏠</div>
+      <div class="nav-icon" title="Menu 2">📦</div>
+      <div class="nav-icon" title="Menu 3">📊</div>
+      <div class="nav-icon" title="Menu 4">⚙️</div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <!-- TOP BAR -->
+      <div class="topbar" role="region" aria-label="Bar Atas">
+        <div style="width:44px"></div> <!-- spacer supaya search tampil di tengah -->
+        <div class="search-wrap">
+          <div class="search" role="search">
+            <span aria-hidden="true">🔎</span>
+            <input type="search" placeholder="Cari..." aria-label="Cari konten" />
+            <button style="border:0;background:transparent;cursor:pointer">/</button>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:10px; align-items:center;">
+          <button aria-label="Notifikasi" title="Notifikasi" style="border:0;background:transparent;cursor:pointer;font-size:18px">🔔</button>
+          <div class="profile" title="Profil">J</div>
+        </div>
+      </div>
+
+      <!-- HERO / SLIDER -->
+      <section class="hero" aria-label="Hero">
+        <div class="slider" id="slider">
+          <div class="slide show" data-index="0" style="background:linear-gradient(135deg,#3366ff,#4da6ff);">
+            <div style="text-align:center; max-width:780px;">
+              <div style="font-size:22px; margin-bottom:8px;">Konten yang besar di slide</div>
+              <div style="opacity:0.9; font-size:13px;">Deskripsi singkat, panggil perhatian pengguna di sini.</div>
+            </div>
+          </div>
+          <div class="slide hidden" data-index="1" style="background:linear-gradient(135deg,#ff7a7a,#ffb07a);">
+            <div style="text-align:center; max-width:780px;">
+              <div style="font-size:22px; margin-bottom:8px;">Promo/Informasi kedua</div>
+              <div style="opacity:0.9; font-size:13px;">Contoh teks untuk slide kedua.</div>
+            </div>
+          </div>
+          <div class="slide hidden" data-index="2" style="background:linear-gradient(135deg,#6affb0,#37d3a6); color:#043;">
+            <div style="text-align:center; max-width:780px;">
+              <div style="font-size:22px; margin-bottom:8px;">Pengumuman penting</div>
+              <div style="opacity:0.9; font-size:13px;">Slide ketiga bisa menampilkan pengumuman.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dots" id="dots" aria-hidden="false" style="margin-top:12px;">
+          <div class="dot active" data-index="0" aria-label="Slide 1"></div>
+          <div class="dot" data-index="1" aria-label="Slide 2"></div>
+          <div class="dot" data-index="2" aria-label="Slide 3"></div>
+        </div>
+      </section>
+
+      <!-- GRID OF CARDS -->
+      <section class="cards" aria-label="Menu cepat">
+        <article class="card">
+          <div class="thumb">A</div>
+          <div class="meta">
+            <h4>Menu / Item 1</h4>
+            <p>Deskripsi singkat menu 1.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">B</div>
+          <div class="meta">
+            <h4>Menu / Item 2</h4>
+            <p>Deskripsi singkat menu 2.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">C</div>
+          <div class="meta">
+            <h4>Menu / Item 3</h4>
+            <p>Deskripsi singkat menu 3.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">D</div>
+          <div class="meta">
+            <h4>Menu / Item 4</h4>
+            <p>Deskripsi singkat menu 4.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">E</div>
+          <div class="meta">
+            <h4>Menu / Item 5</h4>
+            <p>Deskripsi singkat menu 5.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">F</div>
+          <div class="meta">
+            <h4>Menu / Item 6</h4>
+            <p>Deskripsi singkat menu 6.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
